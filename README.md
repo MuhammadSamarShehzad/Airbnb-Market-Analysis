@@ -25,10 +25,20 @@ This project uses three datasets containing property details, pricing trends, an
 ```bash
 git clone https://github.com/your-username/Airbnb-Market-Analysis.git
 ```
-
+```bash
 cd Airbnb-Market-Analysis
+```
+### 2️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
+### 3️⃣ Run the Flask App
+```bash
 python app.py
+```
+#### ➡ Open http://127.0.0.1:5000/ in your browser to use the web app.
+
+### 📂 Project Structure
 📦 Airbnb-Market-Analysis
 │── 📁 data/                    # Dataset files
 │── 📁 static/                  # CSS styles for Flask app  
