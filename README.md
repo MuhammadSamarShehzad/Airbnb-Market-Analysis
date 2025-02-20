@@ -40,11 +40,10 @@ python app.py
 
 ### 📂 Project Structure
 📦 Airbnb-Market-Analysis
-│── 📁 data/                    # Dataset files
-│── 📁 static/                  # CSS styles for Flask app  
-│── 📁 templates/               # HTML files for Flask app  
-│── 📄 Airbnb_Market_Analysis.ipynb  # Jupyter Notebook (EDA)
-│── 📄 app.py                     # Flask web app
-│── 📄 requirements.txt            # Required packages
-│── 📄 README.md                   # Project documentation
-
+│── 📁 data/                    # Dataset files<br>
+│── 📁 static/                  # CSS styles for Flask app  <br>
+│── 📁 templates/               # HTML files for Flask app  <br>
+│── 📄 Airbnb_Market_Analysis.ipynb  # Jupyter Notebook (EDA)<br>
+│── 📄 app.py                     # Flask web app<br>
+│── 📄 requirements.txt            # Required packages<br>
+│── 📄 README.md                   # Project documentation<br>
