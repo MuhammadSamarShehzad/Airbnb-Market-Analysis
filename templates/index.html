@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏡 Airbnb Insights Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🏡 Airbnb Insights Dashboard</h1>
+        <p>Explore data-driven insights to maximize Airbnb success!</p>
+    </header>
+
+    <div class="container">
+        <!-- Overview Section -->
+        <div class="overview-card">
+            <h2>📌 About This Dashboard</h2>
+            <p>
+                The Airbnb rental market is highly competitive, and making the right decisions is crucial.  
+                This dashboard provides **data-driven insights** for property owners and investors to:
+            </p>
+            <ul>
+                <li>📊 Understand guest satisfaction trends</li>
+                <li>🏠 Discover the most popular room types</li>
+                <li>💰 Identify the best pricing strategies</li>
+                <li>⭐ Analyze the impact of Superhost status</li>
+                <li>🏙️ Explore city-wise Airbnb distribution</li>
+            </ul>
+        </div>
+
+        <!-- Guest Satisfaction -->
+        <div class="card">
+            <h2>📊 Guest Satisfaction Trends</h2>
+            <p>Understanding guest satisfaction helps optimize property offerings for better reviews.</p>
+            {{ graph1 | safe }}
+        </div>
+
+        <!-- Room Type Distribution -->
+        <div class="card">
+            <h2>🏠 Room Type Preferences</h2>
+            <p>Which room types are the most popular among Airbnb guests?</p>
+            {{ graph2 | safe }}
+        </div>
+
+        <!-- Price vs Rating -->
+        <div class="card">
+            <h2>💰 Price vs Ratings</h2>
+            <p>Does a higher price lead to better ratings? This analysis helps identify the sweet spot.</p>
+            {{ graph3 | safe }}
+        </div>
+
+        <!-- Listings by City -->
+        <div class="card">
+            <h2>🏙️ Airbnb Listings by City</h2>
+            <p>Which cities have the most and least Airbnb listings?</p>
+            {{ graph4 | safe }}
+        </div>
+
+        <!-- Correlation Heatmap -->
+        <div class="card">
+            <h2>🔍 Key Factors Affecting Ratings</h2>
+            <p>What aspects of an Airbnb property impact guest ratings the most?</p>
+            {{ graph5 | safe }}
+        </div>
+
+        <!-- Bedroom Count vs Ratings -->
+        <div class="card">
+            <h2>🛏️ Do More Bedrooms Mean Better Ratings?</h2>
+            <p>How does the number of bedrooms influence guest ratings?</p>
+            {{ graph6 | safe }}
+        </div>
+
+        <!-- Superhost vs Ratings -->
+        <div class="card">
+            <h2>⭐ Superhost Advantage</h2>
+            <p>Do Superhosts receive better ratings compared to regular hosts?</p>
+            {{ graph7 | safe }}
+        </div>
+
+        <!-- Word Cloud for Amenities -->
+        {% if wordcloud_img %}
+        <div class="card">
+            <h2>🛋️ Most Common Amenities</h2>
+            <p>What are the most frequently offered amenities in high-rated properties?</p>
+            <img src="data:image/png;base64,{{ wordcloud_img }}" alt="Word Cloud">
+        </div>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>© 2025 Airbnb Insights Dashboard | Developed for Data-Driven Decision Making</p>
+    </footer>
+</body>
+</html>
