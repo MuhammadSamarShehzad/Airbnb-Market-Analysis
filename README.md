@@ -24,6 +24,8 @@ This project uses three datasets containing property details, pricing trends, an
 ### 1️⃣ Clone the Repository  
 ```bash
 git clone https://github.com/your-username/Airbnb-Market-Analysis.git
+```bash
+
 cd Airbnb-Market-Analysis
 pip install -r requirements.txt
 python app.py
