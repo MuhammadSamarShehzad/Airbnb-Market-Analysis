@@ -39,7 +39,7 @@ python app.py
 #### ➡ Open http://127.0.0.1:5000/ in your browser to use the web app.
 
 ### 📂 Project Structure
-📦 Airbnb-Market-Analysis
+📦 Airbnb-Market-Analysis<br>
 │── 📁 data/                    # Dataset files<br>
 │── 📁 static/                  # CSS styles for Flask app  <br>
 │── 📁 templates/               # HTML files for Flask app  <br>
@@ -47,3 +47,17 @@ python app.py
 │── 📄 app.py                     # Flask web app<br>
 │── 📄 requirements.txt            # Required packages<br>
 │── 📄 README.md                   # Project documentation<br>
+
+---
+
+## 📊 **Key Takeaways from Our Analysis**  
+Our analysis reveals **data-driven insights** that help **Airbnb hosts & investors** make smarter decisions.  
+
+✅ **Best Property Type:** *What property types get the most bookings?*  
+✅ **Most Popular Room Type:** *Which room types are in high demand?*  
+✅ **Ideal Pricing Strategy:** *What price range maximizes revenue?*  
+✅ **Top Amenities:** *Which amenities attract the most guests?*  
+✅ **Best Cities for Investment:** *Where should investors focus?*  
+✅ **Superhost Advantage:** *Does Superhost status lead to better ratings?*  
+
+📌 **Check the Jupyter Notebook for a detailed breakdown of these insights!** 
